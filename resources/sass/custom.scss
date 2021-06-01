@@ -1,0 +1,38 @@
+//sidebar hover color
+.c-sidebar .c-sidebar-nav-link:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+    color: #fff;
+    background: #2eb85c;
+}
+
+
+ //Picker Registration form
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.myactive {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+html:not([dir=rtl]) .was-validated .form-control:valid, html:not([dir=rtl]) .form-control.is-valid {
+    background-position: right 1.5rem center,center right 2.25rem;
+}

@@ -13,15 +13,26 @@
 <!-- Header -->
 <section id="header">
     <header class="major">
-        <h1>Tea Farm System</h1>
+        <h1>Tea Farm Management</h1>
         <p>
             This is a system that aims to simplify daily records of the Farm.
         </p>
     </header>
     <div class="container">
         <ul class="actions special">
-            <li><a href="#one" class="button primary scrolly">Login</a></li>
-            <li><a href="#one" class="button primary scrolly">Register</a></li>
+{{--            <li><a href="#one" class="button primary scrolly">Login</a></li>--}}
+{{--            <li><a href="#one" class="button primary scrolly">Register</a></li>--}}
+
+            @if (Route::has('login'))
+                @auth
+                    <li><a href="{{ url("/dashboard") }}" class="button primary">Dashboard</a></li>
+                @else
+                    <li><a href="{{ route('login') }}" class="button primary">Login</a></li>
+                    @if (Route::has('register'))
+                        <li><a href="{{ route('register') }}" class="button primary">Register</a></li>
+                    @endif
+                @endauth
+            @endif
         </ul>
     </div>
 </section>

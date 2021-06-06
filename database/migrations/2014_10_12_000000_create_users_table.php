@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('gender');
             $table->enum('role',['admin','supervisor','picker'])->default('picker');
             $table->enum('status', ['active', 'inactive'])->default('active');
+            $table->unsignedBigInteger('salary_id')->default('1');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

@@ -5,138 +5,89 @@
         <div class="fade-in">
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-primary">
+                    <div class="card text-white bg-gradient-info">
                         <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
                             <div>
-                                <div class="text-value-lg">9.823 Kg</div>
-                                <div>This Month</div>
-                            </div>
-                        </div>
-                        <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                            <div class="chartjs-size-monitor">
-                                <div class="chartjs-size-monitor-expand">
-                                    <div class=""></div>
-                                </div>
-                                <div class="chartjs-size-monitor-shrink">
-                                    <div class=""></div>
-                                </div>
-                            </div>
-                            <canvas class="chart chartjs-render-monitor" id="card-chart1" height="70"
-                                    style="display: block; width: 347px; height: 70px;" width="347"></canvas>
-                            <div id="card-chart1-tooltip" class="c-chartjs-tooltip top bottom"
-                                 style="opacity: 0; left: 83.9824px; top: 127.858px;">
-                                <div class="c-tooltip-header">
-                                    <div class="c-tooltip-header-item">May</div>
-                                </div>
-                                <div class="c-tooltip-body">
-                                    <div class="c-tooltip-body-item"><span class="c-tooltip-body-item-color"
-                                                                           style="background-color: rgb(50, 31, 219);"></span><span
-                                            class="c-tooltip-body-item-label">My First dataset</span><span
-                                            class="c-tooltip-body-item-value">51</span></div>
-                                </div>
+                                <div class="text-value-lg">{{$monthlySumProds}} Kg</div>
+                                <div class="pb-4 text-capitalize">Picked This Month</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-info">
+                    <div class="card text-white bg-gradient-primary">
                         <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
                             <div>
-                                <div class="text-value-lg">9.823 Kg</div>
-                                <div>Total Picked</div>
-                            </div>
-                        </div>
-                        <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                            <div class="chartjs-size-monitor">
-                                <div class="chartjs-size-monitor-expand">
-                                    <div class=""></div>
-                                </div>
-                                <div class="chartjs-size-monitor-shrink">
-                                    <div class=""></div>
-                                </div>
-                            </div>
-                            <canvas class="chart chartjs-render-monitor" id="card-chart1" height="70"
-                                    style="display: block; width: 347px; height: 70px;" width="347"></canvas>
-                            <div id="card-chart1-tooltip" class="c-chartjs-tooltip top bottom"
-                                 style="opacity: 0; left: 83.9824px; top: 127.858px;">
-                                <div class="c-tooltip-header">
-                                    <div class="c-tooltip-header-item">May</div>
-                                </div>
-                                <div class="c-tooltip-body">
-                                    <div class="c-tooltip-body-item"><span class="c-tooltip-body-item-color"
-                                                                           style="background-color: rgb(50, 31, 219);"></span><span
-                                            class="c-tooltip-body-item-label">My First dataset</span><span
-                                            class="c-tooltip-body-item-value">51</span></div>
-                                </div>
+                                <div class="text-value-lg">{{$sumProds}} Kg</div>
+                                <div class="pb-4 text-capitalize">Total Picked</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-warning">
+                    <div class="card text-white bg-gradient-success">
                         <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
                             <div>
-                                <div class="text-value-lg">9.823 Tsh</div>
-                                <div>Current Salary</div>
-                            </div>
-                        </div>
-                        <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                            <div class="chartjs-size-monitor">
-                                <div class="chartjs-size-monitor-expand">
-                                    <div class=""></div>
-                                </div>
-                                <div class="chartjs-size-monitor-shrink">
-                                    <div class=""></div>
-                                </div>
-                            </div>
-                            <canvas class="chart chartjs-render-monitor" id="card-chart1" height="70"
-                                    style="display: block; width: 347px; height: 70px;" width="347"></canvas>
-                            <div id="card-chart1-tooltip" class="c-chartjs-tooltip top bottom"
-                                 style="opacity: 0; left: 83.9824px; top: 127.858px;">
-                                <div class="c-tooltip-header">
-                                    <div class="c-tooltip-header-item">May</div>
-                                </div>
-                                <div class="c-tooltip-body">
-                                    <div class="c-tooltip-body-item"><span class="c-tooltip-body-item-color"
-                                                                           style="background-color: rgb(50, 31, 219);"></span><span
-                                            class="c-tooltip-body-item-label">My First dataset</span><span
-                                            class="c-tooltip-body-item-value">51</span></div>
-                                </div>
+                                <div class="text-value-lg">{{$salary->salary}} Tsh</div>
+                                <div class="pb-4 text-capitalize">Current Monthly Salary</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-danger">
+                    <div class="card text-white bg-gradient-warning">
                         <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
                             <div>
-                                <div class="text-value-lg">9.823 Tsh</div>
-                                <div>Current Commission</div>
+                                <div class="text-value-lg">{{$commission}} Tsh</div>
+                                <div class="pb-4 text-capitalize">Earned Commission</div>
                             </div>
                         </div>
-                        <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                            <div class="chartjs-size-monitor">
-                                <div class="chartjs-size-monitor-expand">
-                                    <div class=""></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-accent-warning">
+                        <div class="card-header">Latest Five Records</div>
+                        <div class="card-body">
+                            @if($latestProds->isNotEmpty())
+                                <table class="table table-responsive-sm table-hover table-outline mb-0">
+                                    <thead class="thead-light">
+                                    <tr>
+                                        <th><i class="c-icon cil-calendar"></i> Date of Record</th>
+                                        <th class="text-center">Quantity</th>
+                                        <th class="text-center">Extra Quantity</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach($latestProds as $prod)
+                                        <tr>
+                                            <td>
+                                                <div>{{date('M d, Y H:i',strtotime($prod->created_at))}}</div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div>{{$prod->quantity}} Kg</div>
+                                            </td>
+                                            <td class="text-center">
+                                                @if($prod->quantity > 17)
+                                                <div>{{$prod->quantity - 17}} Kg</div>
+                                                @else
+                                                    <div>0 Kg</div>
+                                                    @endif
+                                            </td>
+                                        </tr>
+
+                                    @endforeach
+                                    </tbody>
+                                </table>
+                            @else
+                                <div class="alert alert-danger">
+                                    No data available. Start by working and report to Supervisor!
                                 </div>
-                                <div class="chartjs-size-monitor-shrink">
-                                    <div class=""></div>
-                                </div>
-                            </div>
-                            <canvas class="chart chartjs-render-monitor" id="card-chart1" height="70"
-                                    style="display: block; width: 347px; height: 70px;" width="347"></canvas>
-                            <div id="card-chart1-tooltip" class="c-chartjs-tooltip top bottom"
-                                 style="opacity: 0; left: 83.9824px; top: 127.858px;">
-                                <div class="c-tooltip-header">
-                                    <div class="c-tooltip-header-item">May</div>
-                                </div>
-                                <div class="c-tooltip-body">
-                                    <div class="c-tooltip-body-item"><span class="c-tooltip-body-item-color"
-                                                                           style="background-color: rgb(50, 31, 219);"></span><span
-                                            class="c-tooltip-body-item-label">My First dataset</span><span
-                                            class="c-tooltip-body-item-value">51</span></div>
-                                </div>
-                            </div>
+                            @endif
+
                         </div>
                     </div>
                 </div>

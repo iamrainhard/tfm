@@ -55,6 +55,6 @@ class User extends Authenticatable
 
     public function salary()
     {
-        return $this->hasOne(Salary::class);
+        return $this->belongsTo(Salary::class);
     }
 }

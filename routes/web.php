@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\ProductionController;
+use App\Http\Controllers\RevenueController;
 use App\Http\Controllers\SalaryController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,4 +34,5 @@ Route::resources([
     'pickers' => DetailController::class,
     'production' => ProductionController::class,
     'salary' => SalaryController::class,
+    'revenue' => RevenueController::class,
 ]);

@@ -57,12 +57,10 @@
                 <ul class="c-sidebar-nav-dropdown-items">
                     <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/salary"><span
                                 class="c-sidebar-nav-icon"></span>Salary & Commission</a></li>
-                    <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="notifications/badge.html"><span
-                                class="c-sidebar-nav-icon"></span> Monthly Overview</a></li>
 
                 </ul>
             </li>
-            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="#">
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="/revenue">
                     <i class="c-sidebar-nav-icon cil-graph"></i>
                     Revenue Outline</a></li>
             <li class="c-sidebar-nav-divider"></li>

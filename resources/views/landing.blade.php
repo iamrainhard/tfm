@@ -28,9 +28,9 @@
                     <li><a href="{{ url("/dashboard") }}" class="button primary">Dashboard</a></li>
                 @else
                     <li><a href="{{ route('login') }}" class="button primary">Login</a></li>
-                    @if (Route::has('register'))
-                        <li><a href="{{ route('register') }}" class="button primary">Register</a></li>
-                    @endif
+{{--                    @if (Route::has('register'))--}}
+{{--                        <li><a href="{{ route('register') }}" class="button primary">Register</a></li>--}}
+{{--                    @endif--}}
                 @endauth
             @endif
         </ul>

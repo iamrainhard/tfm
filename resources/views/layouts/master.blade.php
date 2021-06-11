@@ -103,27 +103,7 @@
                     <a class="dropdown-item" href="/profile">
                         <i class="c-icon mr-2 cil-user text-info"></i>
                         Profile</a>
-                    <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div>
-                    <a class="dropdown-item" href="#">
-                        <svg class="c-icon mr-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
-                        </svg>
-                        Settings</a><a class="dropdown-item" href="#">
-                        <svg class="c-icon mr-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-credit-card"></use>
-                        </svg>
-                        Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item"
-                                                                                            href="#">
-                        <svg class="c-icon mr-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-file"></use>
-                        </svg>
-                        Projects<span class="badge badge-primary ml-auto">42</span></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                        <svg class="c-icon mr-2">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
-                        </svg>
-                        Lock Account</a>
                     <a class="dropdown-item" href="{{ route('logout') }}"
                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="c-icon mr-2 cil-account-logout text-danger"></i>Logout
